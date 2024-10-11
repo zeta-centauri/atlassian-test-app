@@ -7,9 +7,9 @@ export default function Main() {
       <MainHeader />
       <div className="main__content">
         <div className="user__img">
-          <img src="/img/user-photo.png" alt="" className="user__img" />
+          <img src="img/user-photo.png" alt="" className="user__img" />
           <button className="edit__button">
-            <img src="/img/svg/edit.svg" alt="" />
+            <img src="img/svg/edit.svg" alt="" />
           </button>
         </div>
         <Form />
