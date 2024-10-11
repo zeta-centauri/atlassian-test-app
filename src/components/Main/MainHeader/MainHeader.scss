@@ -1,0 +1,42 @@
+.main__header {
+  display: flex;
+  gap: 72px;
+  border-bottom: #e6eff5 1px solid;
+  padding: 8px 17px;
+  &-button {
+    color: #718ebf;
+    font-weight: 500;
+    font-size: 16px;
+    &.active {
+      color: #1814f3;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        background-color: #1814f3;
+        height: 3px;
+        left: 0;
+        bottom: -8px;
+        border-radius: 10px 10px 0 0;
+      }
+    }
+  }
+}
+
+@media (width <= 720px) {
+  .main__header {
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+@media (width <= 500px) {
+  .main__header {
+    padding: 0px 5px 8px 5px;
+  }
+}
+@media (width <= 720px) {
+  .main__header-button {
+    font-size: 13px;
+  }
+}
